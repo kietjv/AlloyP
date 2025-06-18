@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Info Form</title>
+</head>
+<body>
+  <h2>User Information Form</h2>
+  <form action="/submit" method="POST">
+    <!-- Name -->
+    <label for="firstName">First Name:</label><br>
+    <input type="text" id="firstName" name="first_name" required><br><br>
+
+    <label for="lastName">Last Name:</label><br>
+    <input type="text" id="lastName" name="last_name" required><br><br>
+
+    <!-- Address -->
+    <label for="address1">Address Line 1:</label><br>
+    <input type="text" id="address1" name="address1" required><br><br>
+
+    <label for="address2">Address Line 2:</label><br>
+    <input type="text" id="address2" name="address2"><br><br>
+
+    <label for="city">City:</label><br>
+    <input type="text" id="city" name="city" required><br><br>
+
+    <label for="state">State (2-letter code):</label><br>
+    <input type="text" id="state" name="state" pattern="^[A-Z]{2}$" required><br><br>
+
+    <label for="zip">Zip/Postal Code:</label><br>
+    <input type="text" id="zip" name="zip" pattern="^[0-9]{5}$" required><br><br>
+
+    <label for="country">Country:</label><br>
+    <input type="text" id="country" name="country" value="US" readonly required><br><br>
+
+    <!-- SSN -->
+    <label for="ssn">SSN (9 digits):</label><br>
+    <input type="text" id="ssn" name="ssn" pattern="^[0-9]{9}$" required><br><br>
+
+    <!-- Email -->
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- Date of Birth -->
+    <label for="dob">Date of Birth (YYYY-MM-DD):</label><br>
+    <input type="text" id="dob" name="dob" pattern="\d{4}-\d{2}-\d{2}" placeholder="YYYY-MM-DD" required><br><br>
+    
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

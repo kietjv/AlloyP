@@ -1,0 +1,14 @@
+# Node modules (don't upload dependencies)
+node_modules/
+
+# Environment variables (DON'T upload secrets!)
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# OS / Editor junk files
+.DS_Store
+Thumbs.db
