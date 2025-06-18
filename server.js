@@ -2,8 +2,9 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const routes = require('./routes/index');
- 
 
+ 
+require('dotenv').config();
 const token = process.env.ALLOY_TOKEN;
 const secret = process.env.ALLOY_SECRET;
 const basicAuth = Buffer.from(`${token}:${secret}`).toString('base64');
